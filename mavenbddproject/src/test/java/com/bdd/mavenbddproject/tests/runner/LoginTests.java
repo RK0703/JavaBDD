@@ -10,8 +10,12 @@ glue = {"com.bdd.mavenbddproject.tests.LoginPageTests"},
 plugin = {}
 )
     
-public class CucumberRunnerTests extends AbstractTestNGCucumberTests 
+public class LoginTests extends AbstractTestNGCucumberTests 
 {
     
 	
 }
+
+
+
+
