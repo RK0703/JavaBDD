@@ -1,4 +1,4 @@
-package com.bdd.mavenbddproject;
+package com.bdd.mavenbddproject.tests;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

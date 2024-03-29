@@ -1,4 +1,4 @@
-package com.bdd.mavenbddproject;
+package com.bdd.mavenbddproject.tests.LoginPageTests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -11,6 +11,7 @@ import com.FrontierX.PageLibRepo.HomePageLib;
 import com.FrontierX.PageLibRepo.LoginPageLib;
 import com.FrontierX.Utilities.FxUtilities;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -56,6 +57,14 @@ public class LoginPage extends Settings
    }
     
     
+    @After
+    public void FinishExecution() 
+    {
+    	 System.out.println("Ending Execution");
+    	driver.quit();
+    }
+    
+    
     @AfterClass
     private void CloseDriverSession(ITestResult result) throws Exception
 	 {
@@ -69,7 +78,7 @@ public class LoginPage extends Settings
 		 {
 			 System.out.println("<-------------Passed Test case is -> " +result.getName()+"-------------->");
 		 }
-		 driver.quit();
+		// driver.quit();
 	 }
 	
  
