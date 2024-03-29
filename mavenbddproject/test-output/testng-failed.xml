@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="2" name="Failed suite [TestNG Reports]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="2" parallel="classes" name="Single Test Suite(failed)" verbose="5">
+    <classes>
+      <class name="com.bdd.mavenbddproject.runner.CucumberRunnerTests">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.bdd.mavenbddproject.runner.CucumberRunnerTests -->
+    </classes>
+  </test> <!-- Single Test Suite(failed) -->
+</suite> <!-- Failed suite [TestNG Reports] -->
