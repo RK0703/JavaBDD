@@ -16,7 +16,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
  
-public class HomePage extends Settings
+public class SearchActivity extends Settings
 
 
 {
@@ -32,6 +32,7 @@ public class HomePage extends Settings
    // @Parameters({ "enivironment" })
    private void Initialize(String env)
    {
+	   System.out.println("Running Class "+ClassName);
 		 try
 		 {
 			 this.driver = DecideEnvironment(env);
@@ -41,13 +42,13 @@ public class HomePage extends Settings
 			 if(env == "serverless")
 			 {
 				 homeObj = loginObj.login("ravikiran@fourthfrontier.com",FxUtilities.DecryptPass("MTIzNDEyMzQ="));
-				 System.out.println("Logging in as Ravikiran : Serverless Production user");
+				 System.out.println("Home Obj Initialized");
 			 }
 			 
 			 else
 			 {   // Regular Prod User
 				 homeObj = loginObj.login("quality+automation@fourthfrontier.com",FxUtilities.DecryptPass("MTIzNDEyMzQ="));
-				 System.out.println("Logging in as Quality user : Regular Prod user");
+				 System.out.println("Home Obj Initialized");
 			 }
 		 }
 		 catch (Exception e)

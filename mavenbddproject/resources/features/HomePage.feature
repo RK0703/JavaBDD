@@ -11,6 +11,9 @@ Background:
 
    
     
-    
+    Scenario: Verify Training Load Arrow is Expandable 
+      
+    When User Clicks on Training load Arrow in "Stage"
+    Then Verify that Days Time line is displayed
     
     
